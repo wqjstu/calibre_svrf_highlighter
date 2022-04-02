@@ -1,0 +1,32 @@
+{
+    "name": "calibre-svrf-highlighter",
+    "displayName": "Calibre SVRF highlighter",
+    "description": "Calibre Standard Verification Rule Format support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "svrf",
+            "aliases": ["SVRF", "svrf"],
+            "extensions": [".svrf", ".drc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "svrf",
+            "scopeName": "source.svrf",
+            "path": "./syntaxes/svrf.tmLanguage.json"
+        }],
+        "snippets": [
+			{
+				"language": "svrf",
+				"path": "./snippets/svrf.json"
+			}
+		]
+    }
+}

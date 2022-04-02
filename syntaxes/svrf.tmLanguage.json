@@ -1,0 +1,535 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "svrf",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#rulechecks"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+                {
+                    "include": "#svrf_kw_a1"
+                },
+                {
+                    "include": "#svrf_kw_c1"
+                },
+                {
+                    "include": "#svrf_kw_d1"
+                },
+                {
+                    "include": "#svrf_kw_d2"
+                },
+                {
+                    "include": "#svrf_kw_d3"
+                },
+                {
+                    "include": "#svrf_kw_d4"
+                },
+                {
+                    "include": "#svrf_kw_d5"
+                },
+                {
+                    "include": "#svrf_kw_d6"
+                },
+                {
+                    "include": "#svrf_kw_d7"
+                },
+                {
+                    "include": "#svrf_kw_e1"
+                },
+                {
+                    "include": "#svrf_kw_e2"
+                },
+                {
+                    "include": "#svrf_kw_e3"
+                },
+                {
+                    "include": "#svrf_kw_f1"
+                },
+                {
+                    "include": "#svrf_kw_f2"
+                },
+                {
+                    "include": "#svrf_kw_i1"
+                },
+                {
+                    "include": "#svrf_kw_l1"
+                },
+                {
+                    "include": "#svrf_kw_l2"
+                },
+                {
+                    "include": "#svrf_kw_l3"
+                },
+                {
+                    "include": "#svrf_kw_l4"
+                },
+                {
+                    "include": "#svrf_kw_l5"
+                },
+                {
+                    "include": "#svrf_kw_l6"
+                },
+                {
+                    "include": "#svrf_kw_l7"
+                },
+                {
+                    "include": "#svrf_kw_l8"
+                },
+                {
+                    "include": "#svrf_kw_l9"
+                },
+                {
+                    "include": "#svrf_kw_l10"
+                },
+                {
+                    "include": "#svrf_kw_l11"
+                },
+                {
+                    "include": "#svrf_kw_l12"
+                },
+                {
+                    "include": "#svrf_kw_l13"
+                },
+                {
+                    "include": "#svrf_kw_l14"
+                },
+                {
+                    "include": "#svrf_kw_l15"
+                },
+                {
+                    "include": "#svrf_kw_l16"
+                },
+                {
+                    "include": "#svrf_kw_m1"
+                },
+                {
+                    "include": "#svrf_kw_n1"
+                },
+                {
+                    "include": "#svrf_kw_n2"
+                },
+                {
+                    "include": "#svrf_kw_n3"
+                },
+                {
+                    "include": "#svrf_kw_o1"
+                },
+                {
+                    "include": "#svrf_kw_p1"
+                },
+                {
+                    "include": "#svrf_kw_p2"
+                },
+                {
+                    "include": "#svrf_kw_p3"
+                },
+                {
+                    "include": "#svrf_kw_p4"
+                },
+                {
+                    "include": "#svrf_kw_p5"
+                },
+                {
+                    "include": "#svrf_kw_p6"
+                },
+                {
+                    "include": "#svrf_kw_p7"
+                },
+                {
+                    "include": "#svrf_kw_p8"
+                },
+                {
+                    "include": "#svrf_kw_p9"
+                },
+                {
+                    "include": "#svrf_kw_p10"
+                },
+                {
+                    "include": "#svrf_kw_p11"
+                },
+                {
+                    "include": "#svrf_kw_p12"
+                },
+                {
+                    "include": "#svrf_kw_r1"
+                },
+                {
+                    "include": "#svrf_kw_s1"
+                },
+                {
+                    "include": "#svrf_kw_t1"
+                },
+                {
+                    "include": "#svrf_kw_u1"
+                },
+                {
+                    "include": "#svrf_kw_v1"
+                },
+                {
+                    "include": "#svrf_kw_w1"
+                }
+			]
+		},
+        "svrf_kw_a1": {
+            "patterns": [{
+                "name": "keyword.a1.svrf",
+                "match": "(?i)\\b(area)\\b"
+            }]
+        },
+        "svrf_kw_c1": {
+            "patterns": [{
+                "name": "keyword.c1.svrf",
+                "match": "(?i)\\b(capacitance\\s+order|coincident\\s+edge|coincident\\s+inside\\s+edge|coincident\\s+outside\\s+edge|convex\\s+edge)\\b"
+            }]
+        },
+        "svrf_kw_d1": {
+            "patterns": [{
+                "name": "keyword.d1.svrf",
+                "match": "(?i)\\b(density\\s+convolve|device\\s+layer|dfm\\s+analyze|dfm\\s+connectivity\\s+redundant|dfm\\s+copy|dfm\\s+create\\s+layer|dfm\\s+critical\\s+area|dfm\\s+database|dfm\\s+defaults|dfm\\s+expand\\s+edge|dfm\\s+expand\\s+enclosure)\\b"
+            }]
+        },
+        "svrf_kw_d2": {
+            "patterns": [{
+                "name": "keyword.d2.svrf",
+                "match": "(?i)\\b(dfm\\s+fill|dfm\\s+function|dfm\\s+grow|dfm\\s+histogram|dfm\\s+measure|dfm\\s+narac|dfm\\s+pattern\\s+capture|dfm\\s+pattern\\s+classify|dfm\\s+property|dfm\\s+property\\s+merge|dfm\\s+rdb|dfm\\s+read|dfm\\s+redundant\\s+vias)\\b"
+            }]
+        },
+        "svrf_kw_d3": {
+            "patterns": [{
+                "name": "keyword.d3.svrf",
+                "match": "(?i)\\b(dfm\\s+select\\s+check|dfm\\s+shift\\s+edge|dfm\\s+size|dfm\\s+space|dfm\\s+spec\\s+fill|dfm\\s+spec\\s+fill\\s+optimizer|dfm\\s+spec\\s+fill\\s+shape|dfm\\s+spec\\s+spatial\\s+sample|dfm\\s+spec\\s+via\\s+redundancy|dfm\\s+stamp|dfm\\s+text)\\b"
+            }]
+        },
+        "svrf_kw_d4": {
+            "patterns": [{
+                "name": "keyword.d4.svrf",
+                "match": "(?i)\\b(dfm\\s+transform|dfm\\s+transition|dfm\\s+unselect\\s+check|dfm\\s+ys\\s+autostart|drawn\\s+acute|drawn\\s+angled|drawn\\s+offgrid|drawn\\s+skew|drc\\s+cell\\s+name|drc\\s+cell\\s+text|drc\\s+check\\s+map)\\b"
+            }]
+        },
+        "svrf_kw_d5": {
+            "patterns": [{
+                "name": "keyword.d5.svrf",
+                "match": "(?i)\\b(drc\\s+check\\s+text|drc\\s+exclude\\s+false\\s+notch|drc\\s+icstation|drc\\s+incremental\\s+connect|drc\\s+incremental\\s+connect\\s+warning|drc\\s+keep\\s+empty|drc\\s+magnify\\s+density|drc\\s+magnify\\s+nar|drc\\s+magnify\\s+results|drc\\s+map\\s+text|drc\\s+map\\s+text\\s+depth)\\b"
+            }]
+        },
+        "svrf_kw_d6": {
+            "patterns": [{
+                "name": "keyword.d6.svrf",
+                "match": "(?i)\\b(drc\\s+map\\s+text\\s+layer|drc\\s+maximum\\s+cell\\s+name\\s+length|drc\\s+maximum\\s+results|drc\\s+maximum\\s+unattached\\s+label\\s+warnings|drc\\s+maximum\\s+vertex|drc\\s+print\\s+area|drc\\s+print\\s+perimeter|drc\\s+results\\s+database|drc\\s+results\\s+database\\s+libname|drc\\s+results\\s+database\\s+precision|drc\\s+select\\s+check)\\b"
+            }]
+        },
+        "svrf_kw_d7": {
+            "patterns": [{
+                "name": "keyword.d7.svrf",
+                "match": "(?i)\\b(drc\\s+select\\s+check\\s+by\\s+layer|drc\\s+summary\\s+report|drc\\s+tolerance\\s+factor|drc\\s+tolerance\\s+factor\\s+nar|drc\\s+unselect\\s+check|drc\\s+unselect\\s+check\\s+by\\s+layer)\\b"
+            }]
+        },
+        "svrf_kw_e1": {
+            "patterns": [{
+                "name": "keyword.e1.svrf",
+                "match": "(?i)\\b(enclose\\s+rectangle|erc\\s+cell\\s+name|erc\\s+check\\s+text|erc\\s+keep\\s+empty|erc\\s+maximum\\s+results|erc\\s+maximum\\s+vertex|erc\\s+path\\s+also|erc\\s+pathchk|erc\\s+results\\s+database|erc\\s+select\\s+check|erc\\s+summary\\s+report)\\b"
+            }]
+        },
+        "svrf_kw_e2": {
+            "patterns": [{
+                "name": "keyword.e2.svrf",
+                "match": "(?i)\\b(erc\\s+unselect\\s+check|exclude\\s+acute|exclude\\s+angled|exclude\\s+cell|exclude\\s+offgrid|exclude\\s+skew|expand\\s+cell|expand\\s+cell\\s+text|expand\\s+edge|expand\\s+text|extent\\s+cell\\s+list|extent\\s+cell)\\b"
+            }]
+        },
+        "svrf_kw_e3": {
+            "patterns": [{
+                "name": "keyword.e3.svrf",
+                "match": "(?i)\\b(extent\\s+drawn|ext|external|enc|enclosure)\\b"
+            }]
+        },
+        "svrf_kw_f1": {
+            "patterns": [{
+                "name": "keyword.f1.svrf",
+                "match": "(?i)\\b(flag\\s+acute|flag\\s+angled|flag\\s+nonsimple|flag\\s+nonsimple\\s+path|flag\\s+offgrid|flag\\s+skew|flatten\\s+cell|flatten\\s+inside\\s+cell|fracture\\s+hitachi|fracture\\s+jeol|fracture\\s+mebes)\\b"
+            }]
+        },
+        "svrf_kw_f2": {
+            "patterns": [{
+                "name": "keyword.f2.svrf",
+                "match": "(?i)\\b(fracture\\s+micronic|fracture\\s+nuflare|fracture\\s+vboasis|fracture\\s+oasis_mask)\\b"
+            }]
+        },
+        "svrf_kw_i1": {
+            "patterns": [{
+                "name": "keyword.i1.svrf",
+                "match": "(?i)\\b(inductance\\s+micheck|inductance\\s+wire|inside\\s+cell|inside\\s+edge|int|internal)\\b"
+            }]
+        },
+        "svrf_kw_l1": {
+            "patterns": [{
+                "name": "keyword.l1.svrf",
+                "match": "(?i)\\b(label\\s+order|layer\\s+directory|layer\\s+map|layer\\s+resolution|layout\\s+allow\\s+duplicate\\s+cell|layout\\s+auto\\s+expand|layout\\s+base\\s+cell|layout\\s+base\\s+layer|layout\\s+bump2|layout\\s+case|layout\\s+cell\\s+list)\\b"
+            }]
+        },
+        "svrf_kw_l2": {
+            "patterns": [{
+                "name": "keyword.l2.svrf",
+                "match": "(?i)\\b(layout\\s+cell\\s+match\\s+rule|layout\\s+depth|layout\\s+error\\s+on\\s+input|layout\\s+ignore\\s+text|layout\\s+input\\s+exception\\s+rdb|layout\\s+input\\s+exception\\s+severity|layout\\s+magnify|layout\\s+merge\\s+on\\s+input|layout\\s+path|layout\\s+path2|layout\\s+place\\s+cell)\\b"
+            }]
+        },
+        
+        "svrf_kw_l3": {
+            "patterns": [{
+                "name": "keyword.l3.svrf",
+                "match": "(?i)\\b(layout\\s+polygon|layout\\s+precision|layout\\s+preserve\\s+case|layout\\s+preserve\\s+cell\\s+list|layout\\s+primary|layout\\s+primary2|layout\\s+process\\s+box\\s+record|layout\\s+process\\s+node\\s+record|layout\\s+property\\s+audit|layout\\s+property\\s+text|layout\\s+rename\\s+cell)\\b"
+            }]
+        },
+        "svrf_kw_l4": {
+            "patterns": [{
+                "name": "keyword.l4.svrf",
+                "match": "(?i)\\b(layout\\s+rename\\s+text|layout\\s+system|layout\\s+system2|layout\\s+text|layout\\s+top\\s+layer|layout\\s+use\\s+database\\s+precision|layout\\s+windel|layout\\s+windel\\s+cell|layout\\s+windel\\s+layer|layout\\s+window|layout\\s+window\\s+cell)\\b"
+            }]
+        },
+        "svrf_kw_l5": {
+            "patterns": [{
+                "name": "keyword.l5.svrf",
+                "match": "(?i)\\b(layout\\s+window\\s+clip|layout\\s+window\\s+layer|litho\\s+denseopc|litho\\s+file|litho\\s+opc|litho\\s+opcverify|litho\\s+orc|litho\\s+printimage|litho\\s+psmgate|litho\\s+nmbias\\s|lvs\\s+abort\\s+on\\s+erc\\s+error)\\b"
+            }]
+        },
+        "svrf_kw_l6": {
+            "patterns": [{
+                "name": "keyword.l6.svrf",
+                "match": "(?i)\\b(lvs\\s+abort\\s+on\\s+softchk|lvs\\s+abort\\s+on\\s+supply\\s+error|lvs\\s+all\\s+capacitor\\s+pins\\s+swappable|lvs\\s+auto\\s+expand\\s+hcells|lvs\\s+box|lvs\\s+builtin\\s+device\\s+pin\\s+swap|lvs\\s+builtin\\s+mos\\s+nrd_nrs|lvs\\s+cell\\s+list|lvs\\s+cell\\s+supply|lvs\\s+center\\s+device\\s+pins|lvs\\s+check\\s+port\\s+names)\\b"
+            }]
+        },
+        "svrf_kw_l7": {
+            "patterns": [{
+                "name": "keyword.l7.svrf",
+                "match": "(?i)\\b(lvs\\s+compare\\s+case|lvs\\s+component\\s+subtype\\s+property|lvs\\s+component\\s+type\\s+property|lvs\\s+cpoint|lvs\\s+device\\s+type|lvs\\s+discard\\s+pins\\s+by\\s+device|lvs\\s+downcase\\s+device|lvs\\s+eddm\\s+process\\s+m|lvs\\s+exact\\s+subtypes|lvs\\s+exclude\\s+hcell|lvs\\s+execute\\s+erc)\\b"
+            }]
+        },
+        "svrf_kw_l8": {
+            "patterns": [{
+                "name": "keyword.l8.svrf",
+                "match": "(?i)\\b(lvs\\s+expand\\s+seed\\s+promotions|lvs\\s+expand\\s+unbalanced\\s+cells|lvs\\s+filter|lvs\\s+filter\\s+unused\\s+bipolar|lvs\\s+filter\\s+unused\\s+capacitors|lvs\\s+filter\\s+unused\\s+diodes|lvs\\s+filter\\s+unused\\s+mos|lvs\\s+filter\\s+unused\\s+option|lvs\\s+filter\\s+unused\\s+resistors|lvs\\s+global\\s+layout\\s+name|lvs\\s+globals\\s+are\\s+ports)\\b"
+            }]
+        },
+        "svrf_kw_l9": {
+            "patterns": [{
+                "name": "keyword.l9.svrf",
+                "match": "(?i)\\b(lvs\\s+ground\\s+name|lvs\\s+heap\\s+directory|lvs\\s+ignore\\s+ports|lvs\\s+ignore\\s+trivial\\s+named\\s+ports|lvs\\s+inject\\s+logic|lvs\\s+isolate\\s+shorts|lvs\\s+map\\s+device|lvs\\s+netlist\\s+all\\s+texted\\s+pins|lvs\\s+netlist\\s+allow\\s+inconsistent\\s+model|lvs\\s+netlist\\s+box\\s+contents|lvs\\s+netlist\\s+comment\\s+coded\\s+properties)\\b"
+            }]
+        },
+        "svrf_kw_l10": {
+            "patterns": [{
+                "name": "keyword.l10.svrf",
+                "match": "(?i)\\b(lvs\\s+netlist\\s+comment\\s+coded\\s+substrate|lvs\\s+netlist\\s+unnamed\\s+box\\s+pins|lvs\\s+nl\\s+pin\\s+locations|lvs\\s+non\\s+user\\s+name|lvs\\s+out\\s+of\\s+range\\s+exclude\\s+zero|lvs\\s+pin\\s+name\\s+property|lvs\\s+power\\s+name|lvs\\s+precise\\s+interaction|lvs\\s+preserve\\s+box\\s+cells|lvs\\s+preserve\\s+box\\s+ports|lvs\\s+preserve\\s+floating\\s+top\\s+nets)\\b"
+            }]
+        },
+        "svrf_kw_l11": {
+            "patterns": [{
+                "name": "keyword.l11.svrf",
+                "match": "(?i)\\b(lvs\\s+preserve\\s+parameterized\\s+cells|lvs\\s+property\\s+initialize|lvs\\s+property\\s+map|lvs\\s+property\\s+resolution\\s+maximum|lvs\\s+push\\s+devices|lvs\\s+recognize\\s+gates|lvs\\s+recognize\\s+gates\\s+tolerance|lvs\\s+reduce|lvs\\s+reduce\\s+parallel\\s+bipolar|lvs\\s+reduce\\s+parallel\\s+capacitors|lvs\\s+reduce\\s+parallel\\s+diodes)\\b"
+            }]
+        },
+        "svrf_kw_l12": {
+            "patterns": [{
+                "name": "keyword.l12.svrf",
+                "match": "(?i)\\b(lvs\\s+reduce\\s+parallel\\s+mos|lvs\\s+reduce\\s+parallel\\s+resistors|lvs\\s+reduce\\s+semi\\s+series\\s+mos|lvs\\s+reduce\\s+series\\s+capacitors|lvs\\s+reduce\\s+series\\s+mos|lvs\\s+reduce\\s+series\\s+resistors|lvs\\s+reduce\\s+split\\s+gates|lvs\\s+reduction\\s+priority|lvs\\s+report|lvs\\s+report\\s+maximum|lvs\\s+report\\s+option)\\b"
+            }]
+        },
+        "svrf_kw_l13": {
+            "patterns": [{
+                "name": "keyword.l13.svrf",
+                "match": "(?i)\\b(lvs\\s+report\\s+units|lvs\\s+report\\s+warnings\\s+hcell\\s+only|lvs\\s+report\\s+warnings\\s+top\\s+only|lvs\\s+reverse\\s+wl|lvs\\s+short\\s+equivalent\\s+nodes|lvs\\s+show\\s+seed\\s+promotions|lvs\\s+show\\s+seed\\s+promotions\\s+maximum|lvs\\s+signature\\s+maximum|lvs\\s+soft\\s+substrate\\s+pins|lvs\\s+softchk|lvs\\s+spice\\s+allow\\s+duplicate\\s+subcircuit\\s+names)\\b"
+            }]
+        },
+        
+        "svrf_kw_l14": {
+            "patterns": [{
+                "name": "keyword.l14.svrf",
+                "match": "(?i)\\b(lvs\\s+spice\\s+allow\\s+floating\\s+pins|lvs\\s+spice\\s+allow\\s+inline\\s+parameters|lvs\\s+spice\\s+allow\\s+unquoted\\s+strings|lvs\\s+spice\\s+conditional\\s+ldd|lvs\\s+spice\\s+cull\\s+primitive\\s+subcircuits|lvs\\s+spice\\s+implied\\s+mos\\s+area|lvs\\s+spice\\s+multiplier\\s+name|lvs\\s+spice\\s+option|lvs\\s+spice\\s+override\\s+globals|lvs\\s+spice\\s+prefer\\s+pins|lvs\\s+spice\\s+redefine\\s+param)\\b"
+            }]
+        },
+        
+        "svrf_kw_l15": {
+            "patterns": [{
+                "name": "keyword.l15.svrf",
+                "match": "(?i)\\b(lvs\\s+spice\\s+rename\\s+parameter|lvs\\s+spice\\s+replicate\\s+devices|lvs\\s+spice\\s+scale\\s+x\\s+parameters|lvs\\s+spice\\s+slash\\s+is\\s+space|lvs\\s+spice\\s+strict\\s+wl|lvs\\s+split\\s+gate\\s+ratio|lvs\\s+strict\\s+subtypes|lvs\\s+summary\\s+report|lvs\\s+write\\s+injected\\s+layout\\s+netlist|lvs\\s+write\\s+injected\\s+source\\s+netlist|lvs\\s+write\\s+layout\\s+netlist)\\b"
+            }]
+        },
+        "svrf_kw_l16": {
+            "patterns": [{
+                "name": "keyword.l16.svrf",
+                "match": "(?i)\\b(lvs\\s+write\\s+source\\s+netlist|layer)\\b"
+            }]
+        },
+        "svrf_kw_m1": {
+            "patterns": [{
+                "name": "keyword.m1.svrf",
+                "match": "(?i)\\b(mask\\s+results\\s+database|mask\\s+svdb\\s+directory|mdp\\s+checkmap|mdp\\s+embed|mdp\\s+mapsize|mdp\\s+maskopt|mdp\\s+oasis_extent)\\b"
+            }]
+        },
+        "svrf_kw_n1": {
+            "patterns": [{
+                "name": "keyword.n1.svrf",
+                "match": "(?i)\\b(net\\s+area|net\\s+area\\s+ratio|net\\s+area\\s+ratio\\s+accumulate|net\\s+area\\s+ratio\\s+print|net\\s+interact|not\\s+angle|not\\s+area|not\\s+coincident\\s+edge|not\\s+coincident\\s+inside\\s+edge|not\\s+coincident\\s+outside\\s+edge|not\\s+cut)\\b"
+            }]
+        },
+        
+        "svrf_kw_n2": {
+            "patterns": [{
+                "name": "keyword.n2.svrf",
+                "match": "(?i)\\b(not\\s+donut|not\\s+enclose|not\\s+enclose\\s+rectangle|not\\s+inside|not\\s+inside\\s+cell|not\\s+inside\\s+edge|not\\s+interact|not\\s+length|not\\s+net|not\\s+outside|not\\s+outside\\s+edge)\\b"
+            }]
+        },
+        
+        "svrf_kw_n3": {
+            "patterns": [{
+                "name": "keyword.n3.svrf",
+                "match": "(?i)\\b(not\\s+rectangle|not\\s+touch|not\\s+touch\\s+edge|not\\s+touch\\s+inside\\s+edge|not\\s+touch\\s+outside\\s+edge|not\\s+with\\s+edge|not\\s+with\\s+neighbor|not\\s+with\\s+text|not\\s+with\\s+width)\\b"
+            }]
+        },
+        "svrf_kw_o1": {
+            "patterns": [{
+                "name": "keyword.o1.svrf",
+                "match": "(?i)\\b(or\\s+edge|outside\\s+edge)\\b"
+            }]
+        },
+        "svrf_kw_p1": {
+            "patterns": [{
+                "name": "keyword.p1.svrf",
+                "match": "(?i)\\b(parasitic\\s+variation|path\\s+length|perc\\s+load|perc\\s+netlist|perc\\s+property|perc\\s+report|perc\\s+report\\s+maximum|perc\\s+report\\s+option|perc\\s+report\\s+placement\\s+list\\s+maximum|pex\\s+alias|pex\\s+ba\\s+mapfile)\\b"
+            }]
+        },
+        "svrf_kw_p2": {
+            "patterns": [{
+                "name": "keyword.p2.svrf",
+                "match": "(?i)\\b(pex\\s+bulk\\s+layer|pex\\s+cmp\\s+mode|pex\\s+contact\\s+capacitance|pex\\s+corner|pex\\s+corner\\s+custom|pex\\s+def\\s+extract\\s+cell\\s+obstructions|pex\\s+density\\s+estimate|pex\\s+density\\s+window|pex\\s+driver\\s+file|pex\\s+elayer|pex\\s+exclude\\s+distributed)\\b"
+            }]
+        },
+        "svrf_kw_p3": {
+            "patterns": [{
+                "name": "keyword.p3.svrf",
+                "match": "(?i)\\b(pex\\s+exclude\\s+lumped|pex\\s+extract\\s+exclude|pex\\s+extract\\s+floating\\s+nets|pex\\s+extract\\s+include|pex\\s+extract\\s+rgate|pex\\s+extract\\s+temperature|pex\\s+fieldsolver\\s+endcap\\s+spacing|pex\\s+fieldsolver\\s+mode|pex\\s+fill\\s+handling|pex\\s+fill\\s+model|pex\\s+fracture\\s+frequency)\\b"
+            }]
+        },
+        "svrf_kw_p4": {
+            "patterns": [{
+                "name": "keyword.p4.svrf",
+                "match": "(?i)\\b(pex\\s+generate\\s+driver\\s+file\\s+tag|pex\\s+generate\\s+driver_file\\s+tag|pex\\s+ground|pex\\s+ground\\s+layer|pex\\s+ideal\\s+xcell|pex\\s+ignore\\s+capacitance|pex\\s+ignore\\s+resistance|pex\\s+include\\s+distributed|pex\\s+include\\s+lumped|pex\\s+indie\\s+spacing|pex\\s+inductance\\s+default\\s+partial\\s+model)\\b"
+            }]
+        },
+        "svrf_kw_p5": {
+            "patterns": [{
+                "name": "keyword.p5.svrf",
+                "match": "(?i)\\b(pex\\s+inductance\\s+default\\s+pi|pex\\s+inductance\\s+differential\\s+pair|pex\\s+inductance\\s+doprocess|pex\\s+inductance\\s+driver\\s+file|pex\\s+inductance\\s+extract\\s+layers|pex\\s+inductance\\s+filter|pex\\s+inductance\\s+forward\\s+coupling|pex\\s+inductance\\s+frequency|pex\\s+inductance\\s+...\\s+frequency|pex\\s+inductance\\s+micheck\\s+constraint|pex\\s+inductance\\s+minlength)\\b"
+            }]
+        },
+        "svrf_kw_p6": {
+            "patterns": [{
+                "name": "keyword.p6.svrf",
+                "match": "(?i)\\b(pex\\s+inductance\\s+parameters|pex\\s+inductance\\s+range|pex\\s+inductance\\s+returnpath|pex\\s+inductance\\s+same\\s+net\\s+mutual|pex\\s+inductance\\s+self|pex\\s+inductance\\s+skin\\s+include|pex\\s+inductance\\s+switch\\s+time|pex\\s+inductance\\s+switch_time|pex\\s+inductance\\s+...\\s+switch\\s+time|pex\\s+inductance\\s+...\\s+switch_time|pex\\s+inductance\\s+victim)\\b"
+            }]
+        },
+        "svrf_kw_p7": {
+            "patterns": [{
+                "name": "keyword.p7.svrf",
+                "match": "(?i)\\b(pex\\s+inductance\\s+victim\\s+path|pex\\s+inductance\\s+victim_path|pex\\s+inductance\\s+victim\\s+file|pex\\s+inductance\\s+victim_file|pex\\s+magnify|pex\\s+netlist|pex\\s+netlist\\s+adms|pex\\s+netlist\\s+character\\s+map|pex\\s+netlist\\s+connection\\s+section|pex\\s+netlist\\s+create\\s+smashed\\s+device\\s+names|pex\\s+netlist\\s+device\\s+resistance\\s+model)\\b"
+            }]
+        },
+        "svrf_kw_p8": {
+            "patterns": [{
+                "name": "keyword.p8.svrf",
+                "match": "(?i)\\b(pex\\s+netlist\\s+distributed|pex\\s+netlist\\s+escape\\s+characters|pex\\s+netlist\\s+global\\s+nets|pex\\s+netlist\\s+lumped|pex\\s+netlist\\s+mutual\\s+resistance|pex\\s+netlist\\s+noxref\\s+net\\s+names|pex\\s+netlist\\s+position\\s+file|pex\\s+netlist\\s+replicated_device\\s+delimiter|pex\\s+netlist\\s+schematiconly|pex\\s+netlist\\s+select\\s+file|pex\\s+netlist\\s+simple)\\b"
+            }]
+        },
+        "svrf_kw_p9": {
+            "patterns": [{
+                "name": "keyword.p9.svrf",
+                "match": "(?i)\\b(pex\\s+netlist\\s+smashed_device\\s+delimiter|pex\\s+netlist\\s+subnode\\s+section|pex\\s+netlist\\s+unshort\\s+device\\s+pins|pex\\s+netlist\\s+uppercase\\s+keywords|pex\\s+netlist\\s+virtual\\s+connect|pex\\s+pin\\s+order|pex\\s+power|pex\\s+probe\\s+file|pex\\s+reduce\\s+analog|pex\\s+reduce\\s+cc|pex\\s+reduce\\s+digital)\\b"
+            }]
+        },
+        "svrf_kw_p10": {
+            "patterns": [{
+                "name": "keyword.p10.svrf",
+                "match": "(?i)\\b(pex\\s+reduce\\s+distributed|pex\\s+reduce\\s+mincap|pex\\s+reduce\\s+minres|pex\\s+reduce\\s+ronly|pex\\s+reduce\\s+ticer|pex\\s+reduce\\s+via\\s+resistance|pex\\s+report|pex\\s+report\\s+coupling\\s+capacitance|pex\\s+report\\s+distributed|pex\\s+report\\s+lumped|pex\\s+report\\s+mutual\\s+inductance)\\b"
+            }]
+        },
+        "svrf_kw_p11": {
+            "patterns": [{
+                "name": "keyword.p11.svrf",
+                "match": "(?i)\\b(pex\\s+report\\s+netsummary|pex\\s+report\\s+point2point|pex\\s+resistance\\s+parameters|pex\\s+sensitivity|pex\\s+skin\\s+include|pex\\s+slots\\s+handling|pex\\s+temperature|pex\\s+thickness\\s+eqn|pex\\s+thickness\\s+nominal|pex\\s+threshold|pex\\s+tolerance\\s+distributed)\\b"
+            }]
+        },
+        "svrf_kw_p12": {
+            "patterns": [{
+                "name": "keyword.p12.svrf",
+                "match": "(?i)\\b(pex\\s+via\\s+capacitance|pex\\s+via\\s+reduction\\s+resistance|pex\\s+xcell|pex\\s+xcell\\s+extract\\s+mode|pex\\s+xcell\\s+precedence|port\\s+depth|port\\s+layer\\s+polygon|port\\s+layer\\s+text|push\\s+cell|precision)\\b"
+            }]
+        },
+        "svrf_kw_r1": {
+            "patterns": [{
+                "name": "keyword.r1.svrf",
+                "match": "(?i)\\b(ret\\s+sbar\\s|rectangle\\s+enclosure|resistance\\s+connection|resistance\\s+device_seed|resistance\\s+rho|resistance\\s+sheet)\\b"
+            }]
+        },
+        "svrf_kw_s1": {
+            "patterns": [{
+                "name": "keyword.s1.svrf",
+                "match": "(?i)\\b(snap\\s+offgrid|source\\s+case|source\\s+path|source\\s+primary|source\\s+system|svrf\\s+error|svrf\\s+message|svrf\\s+version)\\b"
+            }]
+        },
+        "svrf_kw_t1": {
+            "patterns": [{
+                "name": "keyword.t1.svrf",
+                "match": "(?i)\\b(text\\s+depth|text\\s+layer|text\\s+print\\s+maximum|touch\\s+edge|touch\\s+inside\\s+edge|touch\\s+outside\\s+edge|trace\\s+property)\\b"
+            }]
+        },
+        "svrf_kw_u1": {
+            "patterns": [{
+                "name": "keyword.u1.svrf",
+                "match": "(?i)\\b(unit\\s+capacitance|unit\\s+inductance|unit\\s+length|unit\\s+resistance|unit\\s+time)\\b"
+            }]
+        },
+        "svrf_kw_v1": {
+            "patterns": [{
+                "name": "keyword.v1.svrf",
+                "match": "(?i)\\b(virtual\\s+connect\\s+box\\s+colon|virtual\\s+connect\\s+box\\s+name|virtual\\s+connect\\s+colon|virtual\\s+connect\\s+depth|virtual\\s+connect\\s+name|virtual\\s+connect\\s+report|virtual\\s+connect\\s+semicolon\\s+as\\s+colon)\\b"
+            }]
+        },
+        "svrf_kw_w1": {
+            "patterns": [{
+                "name": "keyword.w1.svrf",
+                "match": "(?i)\\b(with\\s+edge|with\\s+neighbor|with\\s+text|with\\s+width)\\b"
+            }]
+        },
+		"strings": {
+			"name": "string.quoted.double.svrf",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.svrf",
+					"match": "\\\\."
+				}
+			]
+		},
+		"rulechecks": {
+			"name": "string.rulecheck.double.svrf",
+			"begin": "{",
+			"end": "}",
+			"patterns": [
+				{
+					"name": "constant.character.escape.svrf",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.svrf"
+}

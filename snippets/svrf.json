@@ -1,0 +1,28 @@
+{
+	"dfm_pattern_lassify1": {
+		"prefix": "DFM PATTERN CLASSIFY.seed.all",
+		"body": [
+            "out = DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${1:tgtLyr}",
+            "\tSEED         ${2:seedLyr}",
+            "\tHALO         ${3:0.1}",
+            "\tOUTPUT       ALL",
+            "\tOUTFILE     \"${4:out.pmdb}\"",
+            "}"
+		],
+		"description": "classify on seeds and output all"
+	},
+	"dfm_pattern_lassify2": {
+		"prefix": "DFM PATTERN CLASSIFY.seed.uniq",
+		"body": [
+            "out = DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${1:tgtLyr}",
+            "\tSEED         ${2:seedLyr}",
+            "\tHALO         ${3:0.1}",
+            "\tOUTPUT       UNIQUE CONSISTENT NO_HIER",
+            "\tOUTFILE      \"${4:out.pmdb}\"",
+            "}"
+		],
+		"description": "classify on seeds and output uniq"
+	},
+}
