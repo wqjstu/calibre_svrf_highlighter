@@ -6,13 +6,42 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#comment"
 		},
 		{
-			"include": "#rulechecks"
+			"include": "#strings"
 		}
 	],
 	"repository": {
+        "comment": {
+            "patterns": [
+                {
+                    "include": "#single_comment"
+                },
+                {
+                    "include": "#block_comment"
+                }
+            ]
+        },
+        "single_comment": {
+            "patterns": [
+                {
+                    "name": "comment.line",
+                    "match": "\/\/.*$"
+                }
+            ]
+        },
+        "block_comment": {
+			"name": "comment.block",
+			"begin": "\/\\*",
+			"end": "\\*\/",
+			"patterns": [
+				{
+					"name": "comment.block",
+					"match": "\\\\."
+				}
+			]
+        },
 		"keywords": {
 			"patterns": [
                 {
@@ -188,7 +217,7 @@
         "svrf_kw_c1": {
             "patterns": [{
                 "name": "keyword.c1.svrf",
-                "match": "(?i)\\b(capacitance\\s+order|coincident\\s+edge|coincident\\s+inside\\s+edge|coincident\\s+outside\\s+edge|convex\\s+edge|cmacro)\\b"
+                "match": "(?i)\\b(capacitance\\s+order|coincident\\s+edge|coincident\\s+inside\\s+edge|coincident\\s+outside\\s+edge|convex\\s+edge|cmacro|copy)\\b"
             }]
         },
         "svrf_kw_d1": {
@@ -230,7 +259,7 @@
         "svrf_kw_d7": {
             "patterns": [{
                 "name": "keyword.d7.svrf",
-                "match": "(?i)\\b(drc\\s+select\\s+check\\s+by\\s+layer|drc\\s+summary\\s+report|drc\\s+tolerance\\s+factor|drc\\s+tolerance\\s+factor\\s+nar|drc\\s+unselect\\s+check|drc\\s+unselect\\s+check\\s+by\\s+layer|dmacro)\\b"
+                "match": "(?i)\\b(drc\\s+select\\s+check\\s+by\\s+layer|drc\\s+summary\\s+report|drc\\s+tolerance\\s+factor|drc\\s+tolerance\\s+factor\\s+nar|drc\\s+unselect\\s+check|drc\\s+unselect\\s+check\\s+by\\s+layer|dmacro|dfm\\s+or)\\b"
             }]
         },
         "svrf_kw_e1": {
@@ -397,7 +426,7 @@
         "svrf_kw_o1": {
             "patterns": [{
                 "name": "keyword.o1.svrf",
-                "match": "(?i)\\b(or\\s+edge|outside\\s+edge)\\b"
+                "match": "(?i)\\b(or\\s+edge|outside\\s+edge|or)\\b"
             }]
         },
         "svrf_kw_p1": {
@@ -514,19 +543,27 @@
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.svrf",
+					"name": "string.character.escape.svrf",
 					"match": "\\\\."
 				}
 			]
 		},
+        "svrf_variable": {
+            "patterns": [{
+                "name": "variable.w1.svrf",
+                "match": ""
+            }]
+        },
 		"rulechecks": {
 			"name": "string.rulecheck.double.svrf",
 			"begin": "{",
 			"end": "}",
 			"patterns": [
+                {
+                    "include": "#keywords"
+                },
 				{
-					"name": "constant.character.escape.svrf",
-					"match": "\\\\."
+					"include": "#strings"
 				}
 			]
 		}

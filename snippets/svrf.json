@@ -1,28 +1,98 @@
 {
 	"dfm_pattern_lassify1": {
-		"prefix": "DFM PATTERN CLASSIFY.seed.all",
+		"prefix": "DFM PATTERN CLASS => seed all",
 		"body": [
-            "out = DFM PATTERN CLASSIFY",
-            "\tLAYER_TARGET ${1:tgtLyr}",
-            "\tSEED         ${2:seedLyr}",
-            "\tHALO         ${3:0.1}",
+            "${1:outLyr} = DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${2:tgtLyr}",
+            "\tSEED         ${3:seedLyr}",
+            "\tHALO         ${4:0.1}",
             "\tOUTPUT       ALL",
-            "\tOUTFILE     \"${4:out.pmdb}\"",
-            "}"
+            "\tOUTFILE     \"${5:out.pmdb}\"",
 		],
 		"description": "classify on seeds and output all"
 	},
 	"dfm_pattern_lassify2": {
-		"prefix": "DFM PATTERN CLASSIFY.seed.uniq",
+		"prefix": "DFM PATTERN CLASS => seed uniq",
 		"body": [
-            "out = DFM PATTERN CLASSIFY",
-            "\tLAYER_TARGET ${1:tgtLyr}",
-            "\tSEED         ${2:seedLyr}",
-            "\tHALO         ${3:0.1}",
+            "${1:outLyr} DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${2:tgtLyr}",
+            "\tSEED         ${3:seedLyr}",
+            "\tHALO         ${4:0.1}",
             "\tOUTPUT       UNIQUE CONSISTENT NO_HIER",
-            "\tOUTFILE      \"${4:out.pmdb}\"",
-            "}"
+            "\tOUTFILE      \"${5:out.pmdb}\"",
 		],
 		"description": "classify on seeds and output uniq"
+	},
+	"dfm_pattern_lassify3": {
+		"prefix": "DFM PATTERN CLASS => mask all",
+		"body": [
+            "${1:outLyr} = DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${2:tgtLyr}",
+            "\tLAYER_MASK   ${3:maskLyr}",
+            "\tOUTPUT       ALL",
+            "\tOUTFILE     \"${4:out.pmdb}\"",
+		],
+		"description": "classify on mask and output all"
+	},
+	"dfm_pattern_lassify4": {
+		"prefix": "DFM PATTERN CLASS => mask uniq",
+		"body": [
+            "${1:outLyr} = DFM PATTERN CLASSIFY",
+            "\tLAYER_TARGET ${2:tgtLyr}",
+            "\tLAYER_MASK   ${3:maskLyr}",
+            "\tOUTPUT       UNIQUE CONSISTENT NO_HIER",
+            "\tOUTFILE      \"${4:out.pmdb}\"",
+		],
+		"description": "classify on masks and output uniq"
+	},
+	"rulecheck1": {
+		"prefix": "RULECHECK => global ascii",
+		"body": [
+            "${1:rc} {",
+            "\tCOPY ${1}",
+            "}"
+		],
+		"description": "output to global ascii"
+	},
+	"rulecheck2": {
+		"prefix": "RULECHECK => global gds",
+		"body": [
+            "${1:rc} {",
+            "\tCOPY ${1}",
+            "}",
+            "DRC CHECK MAP ${1} ${2:100} ${3:0} PROPERTIES"
+		],
+		"description": "output to global gds"
+	},
+	"rulecheck3": {
+		"prefix": "RULECHECK => local rdb",
+		"body": [
+            "${1:rc} {",
+            "\tDFM RDB ${1} ${2:out.rdb} MAXIMUM ALL ALL CELLS CHECKNAME ${1}",
+            "}"
+		],
+		"description": "output to local rdb"
+	},
+	"rulecheck4": {
+		"prefix": "RULECHECK => local gds",
+		"body": [
+            "${1:rc} {",
+            "\t${1} ",
+            "}",
+            "DRC CHECK MAP ${1} OASIS \"${2:out.oas}\" ${3:100} ${4:0} PROPERTIES",
+		],
+		"description": "output to global gds"
+	},
+	"rulecheck5": {
+		"prefix": "RULECHECK => local gds by dfm rdb",
+		"body": [
+            "${1:rc} {",
+            "\tDFM RDB OASIS \"${2:out.oas}\"",
+            "\t${3:lyr1}  ${4:100} ${5:0}",
+            "\t${6:lyr2}  ${7:101} ${8:0}",
+            "\tMAXIMUM ALL PROPERTIES",
+            "}",
+		],
+		"description": "output to global gds"
 	},
 }
