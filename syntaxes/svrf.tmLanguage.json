@@ -188,7 +188,7 @@
         "svrf_kw_c1": {
             "patterns": [{
                 "name": "keyword.c1.svrf",
-                "match": "(?i)\\b(capacitance\\s+order|coincident\\s+edge|coincident\\s+inside\\s+edge|coincident\\s+outside\\s+edge|convex\\s+edge)\\b"
+                "match": "(?i)\\b(capacitance\\s+order|coincident\\s+edge|coincident\\s+inside\\s+edge|coincident\\s+outside\\s+edge|convex\\s+edge|cmacro)\\b"
             }]
         },
         "svrf_kw_d1": {
@@ -230,7 +230,7 @@
         "svrf_kw_d7": {
             "patterns": [{
                 "name": "keyword.d7.svrf",
-                "match": "(?i)\\b(drc\\s+select\\s+check\\s+by\\s+layer|drc\\s+summary\\s+report|drc\\s+tolerance\\s+factor|drc\\s+tolerance\\s+factor\\s+nar|drc\\s+unselect\\s+check|drc\\s+unselect\\s+check\\s+by\\s+layer)\\b"
+                "match": "(?i)\\b(drc\\s+select\\s+check\\s+by\\s+layer|drc\\s+summary\\s+report|drc\\s+tolerance\\s+factor|drc\\s+tolerance\\s+factor\\s+nar|drc\\s+unselect\\s+check|drc\\s+unselect\\s+check\\s+by\\s+layer|dmacro)\\b"
             }]
         },
         "svrf_kw_e1": {
@@ -469,7 +469,7 @@
         "svrf_kw_p12": {
             "patterns": [{
                 "name": "keyword.p12.svrf",
-                "match": "(?i)\\b(pex\\s+via\\s+capacitance|pex\\s+via\\s+reduction\\s+resistance|pex\\s+xcell|pex\\s+xcell\\s+extract\\s+mode|pex\\s+xcell\\s+precedence|port\\s+depth|port\\s+layer\\s+polygon|port\\s+layer\\s+text|push\\s+cell|precision)\\b"
+                "match": "(?i)\\b(pex\\s+via\\s+capacitance|pex\\s+via\\s+reduction\\s+resistance|pex\\s+xcell|pex\\s+xcell\\s+extract\\s+mode|pex\\s+xcell\\s+precedence|port\\s+depth|port\\s+layer\\s+polygon|port\\s+layer\\s+text|push\\s+cell|precision|polygon)\\b"
             }]
         },
         "svrf_kw_r1": {
@@ -499,7 +499,7 @@
         "svrf_kw_v1": {
             "patterns": [{
                 "name": "keyword.v1.svrf",
-                "match": "(?i)\\b(virtual\\s+connect\\s+box\\s+colon|virtual\\s+connect\\s+box\\s+name|virtual\\s+connect\\s+colon|virtual\\s+connect\\s+depth|virtual\\s+connect\\s+name|virtual\\s+connect\\s+report|virtual\\s+connect\\s+semicolon\\s+as\\s+colon)\\b"
+                "match": "(?i)\\b(variable|virtual\\s+connect\\s+box\\s+colon|virtual\\s+connect\\s+box\\s+name|virtual\\s+connect\\s+colon|virtual\\s+connect\\s+depth|virtual\\s+connect\\s+name|virtual\\s+connect\\s+report|virtual\\s+connect\\s+semicolon\\s+as\\s+colon)\\b"
             }]
         },
         "svrf_kw_w1": {
